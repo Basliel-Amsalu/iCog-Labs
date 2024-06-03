@@ -53,4 +53,10 @@ CREATE
 (Basliel) -[:LEARNED_AT{department: "Software Engineering", duration: "June21, 2021 - June30, 2025", grade: 3.6}]-> (AAU),
 
 (Basliel) -[:WORKED_IN{type:"Organization project"}]-> (ethiospare),
-(Basliel) -[:WORKED_IN{type:"Personal project"}]-> (proshop)
+(Basliel) -[:WORKED_IN{type:"Personal project"}]-> (proshop),
+
+(oeee) -[:USES_TECH_STACK]-> (react),
+(oeee) -[:USES_TECH_STACK]-> (remix),
+(oeee) -[:USES_TECH_STACK]-> (tailwind),
+(oeee) -[:USES_TECH_STACK]-> (node)
+
