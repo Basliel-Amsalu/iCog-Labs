@@ -43,5 +43,8 @@ CREATE
 (Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (mysql),
 (Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (javascript),
 (Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (typescript),
-(Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (python)
+(Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (python),
+
+(Basliel) -[:SPEAKS{proficiency_level: "Fluent"}]-> (english),
+(Basliel) -[:SPEAKS{proficiency_level: "Native or Bilingual"}]-> (amharic)
 
