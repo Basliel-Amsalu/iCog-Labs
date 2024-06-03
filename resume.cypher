@@ -21,5 +21,7 @@ CREATE
 (python: SKILL{name: "Python"}),
 
 (english: LANGUAGE{name: "English"}),
-(amharic: LANGUAGE{name: "Amharic"})
+(amharic: LANGUAGE{name: "Amharic"}),
+
+(oeee: ORGANIZATION{name:"1888ec", location: "Bole, Atlas"})
 
