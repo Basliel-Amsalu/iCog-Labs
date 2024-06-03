@@ -18,5 +18,8 @@ CREATE
 (mysql: SKILL{name: "mysql"}),
 (javascript: SKILL{name: "Javascript"}),
 (typescript: SKILL{name: "Typescript"}),
-(python: SKILL{name: "Python"})
+(python: SKILL{name: "Python"}),
+
+(english: LANGUAGE{name: "English"}),
+(amharic: LANGUAGE{name: "Amharic"})
 
