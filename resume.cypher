@@ -60,5 +60,13 @@ CREATE
 (oeee) -[:USES_TECH_STACK]-> (tailwind),
 (oeee) -[:USES_TECH_STACK]-> (node),
 
-(ethiospare) -[:MADE_BY]-> (oeee)
+(ethiospare) -[:MADE_BY]-> (oeee),
 
+(ethiospare) -[:BUILT_BY]-> (react),
+(ethiospare) -[:BUILT_BY]-> (remix),
+(ethiospare) -[:BUILT_BY]-> (tailwind),
+(ethiospare) -[:BUILT_BY]-> (node),
+
+(proshop) -[:BUILT_BY]-> (react),
+(proshop) -[:BUILT_BY]-> (node),
+(proshop) -[:BUILT_BY]-> (mongodb)
