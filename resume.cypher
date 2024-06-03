@@ -48,5 +48,6 @@ CREATE
 (Basliel) -[:SPEAKS{proficiency_level: "Fluent"}]-> (english),
 (Basliel) -[:SPEAKS{proficiency_level: "Native or Bilingual"}]-> (amharic),
 
-(Basliel) -[:WORKED_AT{position: "Fullstack developer", duration: "Jan1 - April30, 2024"}]-> (oeee)
+(Basliel) -[:WORKED_AT{position: "Fullstack developer", duration: "Jan1 - April30, 2024"}]-> (oeee),
 
+(Basliel) -[:LEARNED_AT{department: "Software Engineering", duration: "June21, 2021 - June30, 2025", grade: 3.6}]-> (AAU)
