@@ -26,5 +26,10 @@ CREATE
 (oeee: ORGANIZATION{name:"1888ec", location: "Bole, Atlas"}),
 
 (proshop: PROJECT{name: "Proshop"}),
-(ethiospare: PROJECT{name: "Ethiospare"})
+(ethiospare: PROJECT{name: "Ethiospare"}),
+
+(Basliel) -[:HAS_HOBBIE]-> (tvseries),
+(Basliel) -[:HAS_HOBBIE]-> (movie),
+(Basliel) -[:HAS_HOBBIE]-> (anime),
+(Basliel) -[:HAS_HOBBIE]-> (reading)
 
