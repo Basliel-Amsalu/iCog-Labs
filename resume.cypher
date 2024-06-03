@@ -50,4 +50,7 @@ CREATE
 
 (Basliel) -[:WORKED_AT{position: "Fullstack developer", duration: "Jan1 - April30, 2024"}]-> (oeee),
 
-(Basliel) -[:LEARNED_AT{department: "Software Engineering", duration: "June21, 2021 - June30, 2025", grade: 3.6}]-> (AAU)
+(Basliel) -[:LEARNED_AT{department: "Software Engineering", duration: "June21, 2021 - June30, 2025", grade: 3.6}]-> (AAU),
+
+(Basliel) -[:WORKED_IN{type:"Organization project"}]-> (ethiospare),
+(Basliel) -[:WORKED_IN{type:"Personal project"}]-> (proshop)
