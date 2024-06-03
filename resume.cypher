@@ -31,5 +31,17 @@ CREATE
 (Basliel) -[:HAS_HOBBIE]-> (tvseries),
 (Basliel) -[:HAS_HOBBIE]-> (movie),
 (Basliel) -[:HAS_HOBBIE]-> (anime),
-(Basliel) -[:HAS_HOBBIE]-> (reading)
+(Basliel) -[:HAS_HOBBIE]-> (reading),
+
+(Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (react),
+(Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (node),
+(Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (next),
+(Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (remix),
+(Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (tailwind),
+(Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (django),
+(Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (mongodb), 
+(Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (mysql),
+(Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (javascript),
+(Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (typescript),
+(Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (python)
 
