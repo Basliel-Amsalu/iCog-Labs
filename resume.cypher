@@ -46,5 +46,7 @@ CREATE
 (Basliel) -[:HAS_SKILL{proficiency_level: "Professional Working Proficiency"}]-> (python),
 
 (Basliel) -[:SPEAKS{proficiency_level: "Fluent"}]-> (english),
-(Basliel) -[:SPEAKS{proficiency_level: "Native or Bilingual"}]-> (amharic)
+(Basliel) -[:SPEAKS{proficiency_level: "Native or Bilingual"}]-> (amharic),
+
+(Basliel) -[:WORKED_AT{position: "Fullstack developer", duration: "Jan1 - April30, 2024"}]-> (oeee)
 
