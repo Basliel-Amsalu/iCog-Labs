@@ -4,5 +4,6 @@ CREATE
 (tvseries: HOBBIE{type: "Tv series"}),
 (movie: HOBBIE{type: "Movie"}),
 (anime: HOBBIE{type: "Anime"}),
-(reading: HOBBIE{type: "Book"})
+(reading: HOBBIE{type: "Book"}),
 
+(AAU: SCHOOL{name:"Addis Ababa University", location: "5 kilo" })
