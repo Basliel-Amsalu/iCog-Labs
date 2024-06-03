@@ -23,5 +23,8 @@ CREATE
 (english: LANGUAGE{name: "English"}),
 (amharic: LANGUAGE{name: "Amharic"}),
 
-(oeee: ORGANIZATION{name:"1888ec", location: "Bole, Atlas"})
+(oeee: ORGANIZATION{name:"1888ec", location: "Bole, Atlas"}),
+
+(proshop: PROJECT{name: "Proshop"}),
+(ethiospare: PROJECT{name: "Ethiospare"})
 
