@@ -69,4 +69,10 @@ CREATE
 
 (proshop) -[:BUILT_BY]-> (react),
 (proshop) -[:BUILT_BY]-> (node),
-(proshop) -[:BUILT_BY]-> (mongodb)
+(proshop) -[:BUILT_BY]-> (mongodb),
+
+(react) -[:AQUIRED_AT]-> (AAU),
+(node) -[:AQUIRED_AT]-> (AAU),
+(python) -[:AQUIRED_AT]-> (AAU),
+(javascript) -[:AQUIRED_AT]-> (AAU),
+(mysql) -[:AQUIRED_AT]-> (AAU)
