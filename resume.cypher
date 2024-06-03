@@ -58,5 +58,7 @@ CREATE
 (oeee) -[:USES_TECH_STACK]-> (react),
 (oeee) -[:USES_TECH_STACK]-> (remix),
 (oeee) -[:USES_TECH_STACK]-> (tailwind),
-(oeee) -[:USES_TECH_STACK]-> (node)
+(oeee) -[:USES_TECH_STACK]-> (node),
+
+(ethiospare) -[:MADE_BY]-> (oeee)
 
