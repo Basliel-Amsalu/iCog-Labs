@@ -6,4 +6,17 @@ CREATE
 (anime: HOBBIE{type: "Anime"}),
 (reading: HOBBIE{type: "Book"}),
 
-(AAU: SCHOOL{name:"Addis Ababa University", location: "5 kilo" })
+(AAU: SCHOOL{name:"Addis Ababa University", location: "5 kilo" }),
+
+(react: SKILL{name: "React"}),
+(node: SKILL{name: "Node.js"}),
+(next: SKILL{name: "Next.js"}),
+(remix: SKILL{name: "Remix.js"}),
+(tailwind: SKILL{name: "tailwindCSS"}),
+(django: SKILL{name: "Django"}),
+(mongodb: SKILL{name: "MongoDB"}),
+(mysql: SKILL{name: "mysql"}),
+(javascript: SKILL{name: "Javascript"}),
+(typescript: SKILL{name: "Typescript"}),
+(python: SKILL{name: "Python"})
+
