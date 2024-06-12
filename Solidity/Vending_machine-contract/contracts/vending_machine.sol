@@ -21,4 +21,9 @@ contract vending_machine {
     candyBarStock[msg.sender] += amount;
   }
 
+  function restock(uint amount) public {
+    require(msg.sender == owner, "Only the owner can restock.");
+    candyBarStock[address(this)] += amount;
+  }
+
 }
