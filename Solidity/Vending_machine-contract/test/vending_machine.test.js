@@ -18,4 +18,10 @@ contract("vending_machine", (accounts) => {
     let amount = await contractInstance.getAmount();
     assert.equal(amount, 49, "amount should be 49 after purchase");
   });
+
+  it("can restock", async () => {
+    await contractInstance.restock(50);
+    let amount = await contractInstance.getAmount();
+    assert.equal(amount, 99, "amount should be 99 after restock");
+  });
 });
