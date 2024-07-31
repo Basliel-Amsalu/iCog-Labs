@@ -8,12 +8,13 @@ import torch
 
 from data_processing import setup_collection
 
-collection = setup_collection()
+collection, embedding_func = setup_collection()
 
 
 def retriever(query, collection=collection):
+    query_embeddings = embedding_func([query])
     query_results = collection.query(
-        query_texts=[query],
+        query_embeddings=query_embeddings,
         include=["documents", "distances"],
         n_results=5,
     )

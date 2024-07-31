@@ -8,6 +8,7 @@ CHROMA_DATA_PATH = "chroma/"
 EMBED_MODEL = "llmrails/ember-v1"
 COLLECTION_NAME = "chatbot_chunk"
 
+
 def process_content():
     with open(SCRAPED_CONTENT_PATH, "r", encoding="utf-8") as f:
         scraped_content = f.read()
@@ -35,13 +36,13 @@ def process_content():
 
     return [flattend for chunk in chunks for flattend in chunk]
 
+
 def setup_collection():
     client = chromadb.PersistentClient(path=CHROMA_DATA_PATH)
     embedding_func = embedding_functions.SentenceTransformerEmbeddingFunction(
         model_name=EMBED_MODEL
     )
-
-    if COLLECTION_NAME in client.list_collections():
+    if COLLECTION_NAME in [(coll.name) for coll in client.list_collections()]:
         collection = client.get_collection(COLLECTION_NAME)
     else:
         collection = client.create_collection(
@@ -55,4 +56,4 @@ def setup_collection():
             ids=[f"id{i}" for i in range(len(documents))],
         )
 
-    return collection
+    return collection, embedding_func
