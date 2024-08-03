@@ -12,17 +12,13 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 with open("../cleaned_squad_data.json", "r", encoding="utf-8") as file:
     squad_data = json.load(file)
 
-# Split data into training and validation sets
-split_ratio = 0.8
-# split_index = int(len(squad_data)[:5000] * split_ratio)
-# train_data = squad_data[:5000][:split_index]
+
 validation_data = squad_data[:5000]
 
-# Extract contexts and questions from validation data
 validation_contexts = [item["context"] for item in validation_data]
 validation_questions = [item["question"] for item in validation_data]
 
-# Models to evaluate
+
 models = {
     "bert-base-uncased": (
         BertTokenizer.from_pretrained("bert-base-uncased"),
@@ -96,7 +92,6 @@ for model_name, model in models.items():
             tokenizer, model_instance, validation_questions
         )
 
-    # Function to find most similar context
     def find_most_similar(question_embedding, context_embeddings):
         similarities = cosine_similarity([question_embedding], context_embeddings)
         most_similar_index = np.argmax(similarities)
@@ -127,7 +122,7 @@ for model_name, model in models.items():
     results[model_name] = {"accuracy": accuracy, "mrr": mrr}
     print(results[model_name])
 
-# Print results
+
 for model_name, metrics in results.items():
     print(f"Model: {model_name}")
     print(f"Accuracy: {metrics['accuracy'] * 100:.2f}%")
