@@ -35,7 +35,7 @@ models = {
 }
 
 
-# Function to generate embeddings using Sentence-BERT, T5, Ember, or GTE models
+# Function to generate embeddings
 def generate_sbert_embeddings(model, texts, batch_size=8, prompt_name=None):
     embeddings = []
     for start_idx in range(0, len(texts), batch_size):
