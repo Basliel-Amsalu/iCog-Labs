@@ -213,4 +213,4 @@ with open("result.txt", "w", encoding="utf-8") as f:
 # step 3500: train loss 1.2899, val loss 1.5945
 # step 4000: train loss 1.2372, val loss 1.5878
 # step 4500: train loss 1.1902, val loss 1.5775
-# step 4999: train loss 1.1454, val loss 1.5871 kind of starts to overfit in here
+# step 4999: train loss 1.1454, val loss 1.5871
