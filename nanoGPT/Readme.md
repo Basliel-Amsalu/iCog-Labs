@@ -11,7 +11,7 @@ nanoGPT is a minimalistic implementation of GPT (Generative Pre-trained Transfor
 - tokenizing the data (it is tokenized in a character level vocabulary since this a character level transformet that predicts the next character using the precedding characters)
 - embedding the tokens
 - training a neural network
-- implementing a Head module (taken from the attention is all you need paper to give the model a sense of space in addition to token which means letting the character token communicate what it has, where it is, what it wants and what it will communicate.)
+- implementing self attention (taken from the attention is all you need paper to give the model a sense of space in addition to token which means letting the character token communicate what it has, where it is, what it wants and what it will communicate.)
 - adding MLP.
 - generating an output and writing it to a file to see the final product of the the transformer.
 
